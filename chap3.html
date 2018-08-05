@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chapter 3 Tests</title>
+		
+		<style type="text/css">
+			ul.no_bullet {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+			}
+			
+			ul.nested {
+				list-style-type: circle;
+			}
+		
+			ul {
+				list-style-type: square;
+			}
+		
+			ol {
+				list-style-type: upper-roman;
+			}
+			
+			li.colored_disc {
+				background: url("images/multicolor_bullet_point_scaled.jpg") no-repeat left 3px;
+				padding-left: 20px;
+				display: block;
+			}
+				
+		</style>
+		
+		<nav>
+			<ul>
+				<li><a href=index.html>Home</a></li>
+				<li><a href=chap2.html>Chapter 2</a></li>
+				<li><strong>Chapter 3</strong></li>
+			</ul>
+		</nav>
+	</head>
+	
+	<body>
+		<p>
+			These examples generally follow the flow of Chapter 3 of <cite>HTML & CSS: Design and Build Websites</cite> by Jon Duckett.
+		</p>
+		
+		<h1>Testing HTML and CSS Concepts: Chapter 3</h1>
+		<p>
+			The following is an example of an ordered list. Use these steps before meditation to increase your chances of
+			experiencing true nirvana:
+
+			<ol>
+				<li>Put your right foot in.</li>
+				<li>Take your right foot out.</li>
+				<li>Repeat step I.</li>
+				<li>Shake it all about.</li>
+				<li>Do the hokey pokey.</li>
+				<li>Turn yourself around.</li>
+			</ol>
+			
+			That's what it's all about.
+		</p>
+		
+		<hr />
+		<p>
+			The following is an example of an unordered list. Ensure that you have to following ingredients to create
+			the perfect solid rocket fuel:
+			
+			<ul class="no_bullet">
+				<li class="colored_disc">Ammonium Perchlorate</li>
+				<li class="colored_disc">Aluminium</li>
+				<li class="colored_disc">Iron Oxide</li>
+				<li class="colored_disc"><abbr title="Polybutadiene Acrylonitrile">PBAN</abbr> polymer</li>
+				<li class="colored_disc">Epoxy Curing Agent</li>
+			</ul>
+			
+			<br />
+			As a note, <a href="https://techforluddites.com/replacing-list-bullets-with-images-using-css/">this website</a> proved to
+			be a wonderful tutorial on using custom images, like <a href="https://www.vapromag.co.uk/creating-bespoke-bullet-points-in-a-word-document/">this one</a>, as bullet points in an unordered list.
+		</p>
+		
+		<hr />
+		<p>
+			The following is an example of a definition list containing various food-related definitions:
+			
+			<dl>
+				<dt>Sashimi</dt>
+					<dd>
+						Sliced raw fish that is served with condiments such as shredded daikon radish or ginger root, wasabi, and soy sauce
+					</dd>
+				<dt>Scale</dt>
+					<dd>
+						A device used to accurately measure the weight of ingredients
+					</dd>
+					<dd>
+						A technique by which the scales are removed from the skin of a fish
+					</dd>
+				<dt>Scamorze</dt>
+				<dt>Scamorzo</dt>
+					<dd>
+						An Italian cheese usually made from whole cow's milk (although it was traditionally made from buffalo milk)
+					</dd>
+		</p>
+		
+		<hr />
+		<p>
+			The following is an example of a nested list containing French desserts:
+			
+			<ul>
+				<li>Mousses</li>
+				<li>Pastries
+					<ul class="nested">
+						<li>Croissant</li>
+						<li>Mille-feuille</li>
+						<li>Palmier</li>
+						<li>Profiterole</li>
+					</ul>
+				</li>
+				<li>Tarts</li>
+			</ul>
+		</p>
+	</body>
+</html>
