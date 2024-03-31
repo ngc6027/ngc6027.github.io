@@ -19,17 +19,19 @@ function changeTextInDemo() {
 
 // anonymous function
 document.getElementById("script_button").addEventListener("click", function() {
-    let demoDefaultText = "Change this text with the button below!"
-    let demoAltText = "Hello JavaScript!"
+    // let demoDefaultText = "Change this text with the button below!"
+    // let demoAltText = "Hello JavaScript!"
 
-    let demoHandle = document.getElementById("demo");
-    let demoText = demoHandle.innerHTML;
+    // let demoHandle = document.getElementById("demo");
+    // let demoText = demoHandle.innerHTML;
 
-    if (demoText === demoDefaultText) {
-        demoText = demoAltText;
-    } else {
-        demoText = demoDefaultText;
-    }
+    // if (demoText === demoDefaultText) {
+    //     demoText = demoAltText;
+    // } else {
+    //     demoText = demoDefaultText;
+    // }
+
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
 });
 
 const myHeading = document.querySelector("h1");
