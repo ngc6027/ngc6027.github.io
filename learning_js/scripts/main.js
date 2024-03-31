@@ -12,9 +12,13 @@ function changeTextInDemo() {
     }
 }
 
-const script_button = document.getElementById("script_button");
-// script_button.addEventListener("click", changeTextInDemo);
-script_button.addEventListener("click", function() {
+// Looking at https://stackoverflow.com/a/1947531/6186275
+
+// function pointer
+// document.getElementById("script_button").addEventListener("click", changeTextInDemo);
+
+// anonymous function
+document.getElementById("script_button").addEventListener("click", function() {
     let demoDefaultText = "Change this text with the button below!"
     let demoAltText = "Hello JavaScript!"
 
