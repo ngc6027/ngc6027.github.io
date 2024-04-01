@@ -6,14 +6,12 @@ function changeTextInDemo() {
     var demoText = demoHandle.innerHTML;
 
     if (demoText === demoDefaultText) {
-        console.log("Changing text to AltText")
+        console.log("Changing text to " + demoAltText);
         demoHandle.innerHTML = demoAltText;
     } else {
-        console.log("Changing text to DefaultText")
+        console.log("Changing text to " + demoDefaultText);
         demoHandle.innerHTML = demoDefaultText;
     }
-
-    // document.getElementById("demo").innerHTML = "Hello JavaScript!";
 }
 
 const myHeading = document.querySelector("h1");
