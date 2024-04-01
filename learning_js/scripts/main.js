@@ -1,9 +1,9 @@
 function changeTextInDemo() {
-    let demoDefaultText = "Change this text with the button below!"
-    let demoAltText = "Hello JavaScript!"
+    var demoDefaultText = "Change this text with the button below!"
+    var demoAltText = "Hello JavaScript!"
 
-    let demoHandle = document.getElementById("demo");
-    let demoText = demoHandle.innerHTML;
+    var demoHandle = document.getElementById("demo");
+    var demoText = demoHandle.innerHTML;
 
     if (demoText === demoDefaultText) {
         console.log("Changing text to AltText")
