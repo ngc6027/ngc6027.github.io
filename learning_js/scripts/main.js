@@ -1,40 +1,20 @@
 function changeTextInDemo() {
-    // let demoDefaultText = "Change this text with the button below!"
-    // let demoAltText = "Hello JavaScript!"
+    let demoDefaultText = "Change this text with the button below!"
+    let demoAltText = "Hello JavaScript!"
 
-    // let demoHandle = document.getElementById("demo");
-    // let demoText = demoHandle.innerHTML;
+    let demoHandle = document.getElementById("demo");
+    let demoText = demoHandle.innerHTML;
 
-    // if (demoText === demoDefaultText) {
-    //     demoText = demoAltText;
-    // } else {
-    //     demoText = demoDefaultText;
-    // }
+    if (demoText === demoDefaultText) {
+        console.log("Changing text to AltText")
+        demoHandle.innerHTML = demoAltText;
+    } else {
+        console.log("Changing text to DefaultText")
+        demoHandle.innerHTML = demoDefaultText;
+    }
 
-    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    // document.getElementById("demo").innerHTML = "Hello JavaScript!";
 }
-
-// Looking at https://stackoverflow.com/a/1947531/6186275
-
-// function pointer
-// document.getElementById("script_button").addEventListener("click", changeTextInDemo);
-
-// anonymous function
-// document.getElementById("script_button").addEventListener("click", function() {
-//     // let demoDefaultText = "Change this text with the button below!"
-//     // let demoAltText = "Hello JavaScript!"
-
-//     // let demoHandle = document.getElementById("demo");
-//     // let demoText = demoHandle.innerHTML;
-
-//     // if (demoText === demoDefaultText) {
-//     //     demoText = demoAltText;
-//     // } else {
-//     //     demoText = demoDefaultText;
-//     // }
-
-//     document.getElementById("demo").innerHTML = "Hello JavaScript!";
-// });
 
 const myHeading = document.querySelector("h1");
 myHeading.textContent = "Hello JavaScript World!";
